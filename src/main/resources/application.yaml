@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: budget
+
+monobank:
+  token: {}
+
+telegram:
+  botId: {}
+  chadId: {}
