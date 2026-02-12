@@ -14,7 +14,7 @@ public class TelegramClient {
     @Value("${telegram.botId}")
     private String botId;
 
-    @Value("${telegram.chadId}")
+    @Value("${telegram.chatId}")
     private String chatId;
 
     private final RestClient restClient;
