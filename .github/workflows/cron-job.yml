@@ -35,5 +35,5 @@ jobs:
         run: ./gradlew build
 
       - name: Run Spring Boot app
-        run: java -jar build/libs/*.jar
+        run: java -jar build/libs/*[!plain].jar
 
