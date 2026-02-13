@@ -12,6 +12,7 @@ public class DailyJob implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("Daily job executed");
         monoUtilListIterator.processWithInterval();
     }
 
