@@ -2,13 +2,11 @@ package com.home.budget.service;
 
 import com.home.budget.client.MonobankClient;
 import com.home.budget.client.TelegramClient;
-import com.home.budget.model.Currency;
 import com.home.budget.model.MerchantCategoryCode;
 import com.home.budget.model.mono.Account;
 import com.home.budget.model.mono.ClientInfo;
 import com.home.budget.model.mono.MonoStatementDto;
 import com.home.budget.model.mono.Statement;
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.stereotype.Service;
@@ -17,8 +15,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import static java.util.stream.Collectors.toList;
 
 @Service
 @RequiredArgsConstructor
@@ -82,11 +78,6 @@ public class MonoUtilListIterator {
             scheduledTask = null;
             System.out.println("Stopped processing");
         }
-    }
-
-    @PostConstruct
-    public void init() {
-        processWithInterval();
     }
 
 }
