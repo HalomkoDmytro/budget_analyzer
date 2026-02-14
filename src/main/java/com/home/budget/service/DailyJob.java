@@ -9,11 +9,12 @@ import org.springframework.stereotype.Service;
 public class DailyJob implements CommandLineRunner {
 
     private final MonoUtilListIterator  monoUtilListIterator;
+    private final MonoReportService  monoReportService;
 
     @Override
     public void run(String... args) throws Exception {
         System.out.println("Daily job executed");
-        monoUtilListIterator.processWithInterval();
+        monoReportService.processWithInterval();
     }
 
 }
