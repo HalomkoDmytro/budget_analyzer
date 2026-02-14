@@ -3,8 +3,8 @@ spring:
     name: budget
 
 monobank:
-  token: ${{ secrets.MONO_TOKEN }}
+  token: ${MONO_TOKEN}
 
 telegram:
-  botId: ${{ secrets.TELEGRAM_BOT_ID }}
-  chatId: ${{ secrets.TELEGRAM_CHAT_ID }}
+  botId: ${TELEGRAM_BOT_ID}
+  chatId: ${TELEGRAM_CHAT_ID}
